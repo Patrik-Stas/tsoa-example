@@ -17,7 +17,7 @@ these controllers. That's why TSOA relies on IoC container to hide away
 "how" the instantiation happens, and instead provide simple interface, such as:
 "give me instance of type ResourceController".
 
-### Run
+# Run it
 Install dependencies
 ```
 yarn
@@ -39,7 +39,7 @@ which should return 200 OK response, and the server will log:
 [0] Baz instance 9bc0978a3fb1232d577a41546ba562f2 getting the Baz
 ```
 
-### Adopting TSOA in existing projects
+# Adopting TSOA in existing projects
 It can seem that adopting TSOA for existing project is invasive, because now
 you need to introduce IoC framework to build your controllers! 
 
