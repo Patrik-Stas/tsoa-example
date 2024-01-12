@@ -22,12 +22,22 @@ Install dependencies
 ```
 yarn
 ```
-Run in development mode
+Run in development mode - This will automatically rebuild tsoa generated code, and restart application
+server anytime our source code OR tsoa-generated code is updated.
 ```
 yarn dev
 ```
-This will automatically rebuild tsoa generated code, and restart application
-server anytime our source code OR tsoa-generated code is updated.
+Test
+```
+curl -v -XGET http://localhost:3000/resources/  -H 'Content-Type: application/json'
+```
+which should return 200 OK response, and the server will log:
+```
+[0] Built FooService a2c43ee146e214d0ae3d3c4751573a56
+[0] Foo instance a2c43ee146e214d0ae3d3c4751573a56 getting the Foo
+[0] Bar instance 42bc3cb5ec579e5d3172812aade18456 getting the Bar
+[0] Baz instance 9bc0978a3fb1232d577a41546ba562f2 getting the Baz
+```
 
 ### Adopting TSOA in existing projects
 It can seem that adopting TSOA for existing project is invasive, because now

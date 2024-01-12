@@ -2,7 +2,7 @@
 import "reflect-metadata";
 import {container} from "tsyringe";
 import {app} from "./app";
-import {BazService} from "./users/BazService";
+import {BazService} from "./services/BazService";
 
 // BazService is used by FooController, but for some reason we want to build up the instance manually, rarther than
 // utilizing tsyringe annotations
