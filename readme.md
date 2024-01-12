@@ -1,4 +1,4 @@
-# TSOA boilerplate
+# TSOA Example project
 
 This is sample TSOA starting project demonstrating its basic features. TSOA 
 requires its consumer to implement IoC interface. This, however, doesn't imply
